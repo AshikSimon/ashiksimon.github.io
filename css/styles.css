@@ -13,6 +13,7 @@
 :root {
     --light-teal: #2bcbba;
     --teal: #0fb9b1;
+    --background-blue: #b5d1d4;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -328,7 +329,7 @@ footer {
 }
 
 .background-alt {
-    background: #d3d3d3
+    background: var(--background-blue);
 }
 
 #lead {
@@ -695,13 +696,13 @@ footer {
 }
 #contact {
     padding: 50px 15px;
-    background: var(--teal);
+    background: var(--background-blue);
     text-align: center
 }
 
 #contact h2 {
     margin: 0 0 15px 0;
-    color: #fff;
+    color: var(--teal);
     font-weight: 500
 }
 
