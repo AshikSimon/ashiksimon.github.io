@@ -10,7 +10,10 @@
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
 */
-
+:root {
+    --light-teal: #2bcbba;
+    --teal: #0fb9b1;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px
@@ -171,7 +174,7 @@ header a:hover {
 }
 
 header a:focus {
-    color: #116466;
+    color: var(--teal);
     text-decoration: none
 }
 
@@ -194,7 +197,7 @@ header.sticky {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: #116466;
+    color: var(--teal);
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
@@ -211,7 +214,7 @@ header.sticky {
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #116466
+    color: var(--teal)
 }
 
 #mobile-menu-close span {
@@ -277,21 +280,22 @@ footer {
 }
 
 .social a:hover {
-    color: #116466
+    color: var(--teal)
 }
 
 .btn-rounded-dark {
     display: inline-block;
-    color: #116466;
+    color: var(--teal);
     padding: 15px 25px;
-    border: 3px solid #116466;
+    border: 3px solid var(--teal);
     border-radius: 30px;
+    background: #fff;
     transition: .5s ease all
 }
 
 .btn-rounded-dark:hover {
-    color: #116466;
-    background: #fff;
+    color: #fff;
+    background: var(--teal);
     text-decoration: none
 }
 
@@ -320,7 +324,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #116466
+    background: var(--teal)
 }
 
 .background-alt {
@@ -463,7 +467,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #116466;
+    background: var(--teal);
     z-index: 0
 }
 
@@ -472,8 +476,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #116466;
-    background: linear-gradient(to bottom, #116466, rgba(52, 152, 219, 0));
+    background: var(--teal);
+    background: linear-gradient(to bottom, var(--teal), rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
@@ -520,7 +524,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #116466;
+    background: var(--light-teal);
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -691,7 +695,7 @@ footer {
 }
 #contact {
     padding: 50px 15px;
-    background: #116466;
+    background: var(--teal);
     text-align: center
 }
 
@@ -721,7 +725,7 @@ footer {
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #116466
+    color: var(--teal)
 }
 
 #contact-form input:-moz-placeholder,
@@ -759,7 +763,7 @@ footer {
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #116466;
+    color: var(--teal);
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all
@@ -804,7 +808,7 @@ footer {
 .optional-section-block p,
 .optional-section-block ul {
     margin: 0 0 15px 0;
-    color: #116466;
+    color: var(--teal);
     font-size: 0.9em
 }
 
