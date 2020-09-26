@@ -16,7 +16,7 @@
     --background-blue: #b5d1d4;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px
 }
 
@@ -544,7 +544,7 @@ footer {
     position: absolute;
     left: 0;
     top: 10px;
-    font-weight: 300;
+    font-weight: 500;
     color: #374054
 }
 
@@ -689,7 +689,8 @@ footer {
     background: #e4e4ea;
     list-style: none;
     cursor: default;
-    font-size: 1.2em
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 #skills li:hover {
     background: #d1e8e2;
@@ -702,7 +703,6 @@ footer {
 
 #contact h2 {
     margin: 0 0 15px 0;
-    color: var(--teal);
     font-weight: 500
 }
 
@@ -720,7 +720,7 @@ footer {
     border: none;
     margin-bottom: 10px;
     background: #D1E8E2;
-    color: #fff;
+    color: #74808a;
     transition: .5s ease all
 }
 
