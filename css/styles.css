@@ -564,7 +564,8 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid #dcd9d9;
-    text-align: left
+    text-align: left;
+    border-radius: 5px;
 }
 
 .education-block h3 {
