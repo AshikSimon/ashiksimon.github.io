@@ -5,11 +5,20 @@ import SEO from "../components/seo"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import CardDeck from "react-bootstrap/CardDeck"
-import YonderImage from "../images/projects/yonder.png"
+//import YonderImage from "../images/projects/yonder.png"
 function openMenu() {
   var element = document.getElementById("header")
   element.classList.add("active")
 }
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../images/projects', false, /\.(png|jpe?g|svg)$/));
+
+console.log(images);
 
 export default function Home() {
   return (
@@ -226,7 +235,7 @@ export default function Home() {
         <div className="container">
           <CardDeck>
             <Card className="m-3">
-            <Card.Img className="img-fluid" variant="top" src={YonderImage} />
+            <Card.Img className="img-fluid" variant="top" src={images['yonder.png']} />
               <Card.Body className="p-3">
                 <Card.Title>Yonder Dynamics Arm</Card.Title>
                 <Card.Text>
@@ -240,7 +249,7 @@ export default function Home() {
                
               </Card.Body>
               <div className="m-3">
-              <Button className="project-button mt-2" variant="outline-primary" href="/yonder-dynamics-arm">View Project</Button>
+              <Link className="btn project-button mt-2" variant="outline-primary" to="/yonder-dynamics-arm">View Project</Link>
               </div>
             </Card>
             <Card className="m-3">
@@ -256,11 +265,11 @@ export default function Home() {
                 
               </Card.Body>
               <div className="m-3">
-              <Button className="project-button mt-2" variant="outline-primary" href="https://via.placeholder.com/300">View Project</Button>
+              <a className="btn project-button mt-2" variant="outline-primary" href="https://via.placeholder.com/300">View Project</a>
               </div>
             </Card>
             <Card className="m-3">
-            <Card.Img className="img-fluid" variant="top" src="https://via.placeholder.com/300" />
+            <Card.Img className="img-fluid" variant="top" src={images['rover.png']} />
               <Card.Body className="p-3">
                 <Card.Title>Covid Rover</Card.Title>
                 <Card.Text>
