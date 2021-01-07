@@ -67,3 +67,5 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+src/static/CNAME
+src/images/projects/first/first-vid-1.mp4

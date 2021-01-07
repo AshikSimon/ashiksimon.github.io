@@ -10,9 +10,18 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./project_header"
-import "./bootstrap.css"
-import "./layout.css"
+import "../bootstrap.css"
+import "../layout.css"
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+  query SiteTitleQuery2 {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`)
 
     function openMenu() {
         var element = document.getElementById("header")
@@ -21,7 +30,7 @@ const Layout = ({ children }) => {
       
   return (
     <>
-      <Header/>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div onClick={openMenu} id="mobile-menu-open" className="shadow-large">
         <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
