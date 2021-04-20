@@ -34,6 +34,9 @@ const Header = ({ siteTitle }) => (
     <li>
       <a href="#contact">Contact</a>
     </li>
+    <li>
+      <a href="https://ashiksimon.com/photo-gallery/">Photography</a>
+    </li>
   </ul>
 </header>
 )

@@ -95,9 +95,8 @@ export default function Home() {
                   </li>
                   <li>
                     Actively participated in implementing and monitoring
-                    continuous improvement initiatives to improve
-                  </li>
-                  safety, improve quality, reduce cycle time, and reduce costs.
+                    continuous improvement initiatives to improve  safety, improve quality, reduce cycle time, and reduce costs.
+                  </li>            
                   <li>
                     Attained an understanding of shipbuilding logistics by
                     regularly attending meetings with vendors, engineers, and
@@ -157,7 +156,7 @@ export default function Home() {
                 className="vtimeline-content"
               >
                 <h3>Yonder Dynamics</h3>
-                <h4>Motions Engineer</h4>
+                <h4>Mechancial Design Engineer</h4>
                 <ul>
                   <li>
                     Build a functioning mars rover style robot for the
@@ -200,7 +199,7 @@ export default function Home() {
                   className="vtimeline-content"
                 >
                   <h3>Craftvue</h3>
-                  <h4>Software Developer</h4>
+                  <h4>Founder</h4>
                   <ul>
                     <li>
                       Developed a custom application with Laravel web framework
@@ -301,7 +300,7 @@ export default function Home() {
       <div id="projects" className="background-alt">
         <h2 className="heading">Projects</h2>
         <div className="container">
-          <CardDeck>
+          <CardDeck >
             <Card className="m-3">
               <Card.Img
                 className="img-fluid"
@@ -310,11 +309,27 @@ export default function Home() {
                 alt="Yonder Dynamics"
               />
               <Card.Body className="p-3">
-                <Card.Title>Yonder Dynamics Arm</Card.Title>
-                <Card.Text></Card.Text>
+                <Card.Title>Yonder Dynamics</Card.Title>
+                <Card.Text align="left">
+{/*}
+                <ul style={{ paddingInlineStart: '20px'}}>
+                  <li>
+                    Team-based competitions that are organized by Northrop
+               
+                  </li>
+                  <li>
+                    Developed a helium airship design the first year by
+                   
+                  </li>
+                  <li>
+                    Designed a hovercraft capable of carrying 15 lbs of payload
+                
+                  </li>
+  </ul> */}
+                </Card.Text>
               </Card.Body>
               <div className="m-3">
-                <Link className="btn-grad " to="/projects/yonder-dynamics-arm">
+                <Link className="btn-grad " to="/projects/yonder-dynamics">
                   View Project
                 </Link>
               </div>
@@ -343,7 +358,7 @@ export default function Home() {
               <Card.Img
                 className="img-fluid"
                 variant="top"
-                src={images["FIRST-1.jpg"]}
+                src={images["FIRST-powerup-1.jpg"]}
                 alt="FIRST Power Up"
               />
               <Card.Body className="p-3">
@@ -351,7 +366,7 @@ export default function Home() {
                 <Card.Text></Card.Text>
               </Card.Body>
               <div className="m-3">
-                <Link className="btn-grad " to="/projects/wip">
+                <Link className="btn-grad " to="/projects/first-powerup">
                   View Project
                 </Link>
               </div>
@@ -376,6 +391,24 @@ export default function Home() {
                 </Link>
               </div>
             </Card>
+
+            <Card className="m-3">
+              <Card.Img
+                className="img-fluid"
+                variant="top"
+                src={images["trebuchet-1.png"]}
+                alt="Trebuchet"
+              />
+              <Card.Body className="p-3">
+                <Card.Title>Trebuchet</Card.Title>
+                <Card.Text></Card.Text>
+              </Card.Body>
+              <div className="m-3">
+                <Link className="btn-grad " to="/projects/trebuchet">
+                  View Project
+                </Link>
+              </div>
+            </Card>
             <Card className="m-3">
               <Card.Img
                 className="img-fluid"
@@ -388,11 +421,19 @@ export default function Home() {
                 <Card.Text></Card.Text>
               </Card.Body>
               <div className="m-3">
-                <a className="btn-grad " target="_blank" rel="noopener" href="https://www.craftvue.com/">
+                <a
+                  className="btn-grad "
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.craftvue.com/"
+                >
                   View Project
                 </a>
               </div>
             </Card>
+          </CardDeck>
+
+          <CardDeck>
             <Card className="m-3">
               <Card.Img
                 className="img-fluid"
@@ -406,6 +447,59 @@ export default function Home() {
               </Card.Body>
               <div className="m-3">
                 <Link className="btn-grad " to="/projects/wip">
+                  View Project
+                </Link>
+              </div>
+            </Card>
+
+            <Card className="m-3">
+              <Card.Img
+                className="img-fluid"
+                variant="top"
+                src={images["3dponics-1.jpg"]}
+                alt="3Dponics"
+              />
+              <Card.Body className="p-3">
+                <Card.Title>3Dponics Hydroponics</Card.Title>
+                {/*
+                <Card.Text align="left">
+                  
+                <ul style={{ paddingInlineStart: '20px'}}>
+                  <li>
+                    Team-based competitions that are organized by Northrop
+               
+                  </li>
+                  <li>
+                    Developed a helium airship design the first year by
+                   
+                  </li>
+                  <li>
+                    Designed a hovercraft capable of carrying 15 lbs of payload
+                
+                  </li>
+                </ul>
+                </Card.Text>
+                */}
+              </Card.Body>
+              <div className="m-3">
+                <Link className="btn-grad " to="/projects/hydroponics">
+                  View Project
+                </Link>
+              </div>
+            </Card>
+            <Card className="m-3">
+              <Card.Img
+                className="img-fluid"
+                variant="top"
+                src={images["sciolyarm-1.jpg"]}
+                alt="Northrop Grumman Airship"
+              />
+              <Card.Body className="p-3">
+                <Card.Title>Sci Oly Robot Arm</Card.Title>
+                <Card.Text></Card.Text>
+              </Card.Body>
+              <div className="m-3">
+                <Link className="btn-grad " to="/projects/scioly-arm">
                   View Project
                 </Link>
               </div>
@@ -430,39 +524,27 @@ export default function Home() {
                 </Link>
               </div>
             </Card>
+           
             <Card className="m-3">
               <Card.Img
                 className="img-fluid"
                 variant="top"
-                src={images["3dponics-1.jpg"]}
-                alt="3Dponics"
+                src={images["stock-tracker-1.jpeg"]}
+                alt="Stock Tracker"
               />
               <Card.Body className="p-3">
-                <Card.Title>3Dponics Hydroponics</Card.Title>
+                <Card.Title>Stock Tracker</Card.Title>
                 <Card.Text></Card.Text>
               </Card.Body>
               <div className="m-3">
-                <Link className="btn-grad " to="/projects/hydroponics">
+                <Link className="btn-grad " to="/projects/stock-tracker">
                   View Project
                 </Link>
               </div>
             </Card>
-            <Card className="m-3">
-              <Card.Img
-                className="img-fluid"
-                variant="top"
-                src={images["sciolyarm-1.jpg"]}
-                alt="Northrop Grumman Airship"
-              />
-              <Card.Body className="p-3">
-                <Card.Title>Sci Oly Robot Arm</Card.Title>
-                <Card.Text></Card.Text>
-              </Card.Body>
-              <div className="m-3">
-                <Link className="btn-grad " to="/projects/wip">
-                  View Project
-                </Link>
-              </div>
+            
+            <Card className="m-3" style={{visibility:'hidden'}}>
+    
             </Card>
           </CardDeck>
         </div>

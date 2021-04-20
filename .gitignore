@@ -69,3 +69,4 @@ yarn-error.log
 .yarn-integrity
 src/static/CNAME
 src/images/projects/first/first-vid-1.mp4
+node_modules

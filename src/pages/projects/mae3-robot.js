@@ -1,10 +1,9 @@
 import React from "react"
-
 import Layout from "../../components/projects/project_layout"
 import SEO from "../../components/seo"
 import LightBox from "../../components/lightbox"
 import {photos} from "../../srcsets/mae3-robot-images"
-
+import MAE3Video from "../../images/projects/mae3/mae3-video-1.mp4"
 const ProjectSummary = () => (
   <Layout>
     <SEO title="MAE 3 Robot" />
@@ -16,7 +15,14 @@ const ProjectSummary = () => (
               <h1>MAE 3 Robot</h1>
             </div>
           </div>
-          <LightBox photos={photos}></LightBox>
+          <div style={{ marginRight: "-5px", marginLeft: "-4px" }}><LightBox photos={photos}></LightBox></div>
+          
+          <div className="embed-responsive embed-responsive-16by9 mt-1">
+          <video controls loop muted>
+            <source src={MAE3Video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          </div>
         </div>
       </div>
     </div>

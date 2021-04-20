@@ -20,7 +20,7 @@ import Carousel, { Modal, ModalGateway } from "react-images"
     return (
         
       <div>
-        <Gallery photos={props.photos} onClick={openLightbox} />
+        <Gallery photos={props.photos} onClick={openLightbox} margin ={4}/>
         <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
